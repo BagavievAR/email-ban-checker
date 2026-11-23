@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Email Ban Checker</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="checker" aria-labelledby="title">
+    <h1 id="title">Email Ban Checker</h1>
+    <p class="description">Проверка email-адреса по списку заблокированных пользователей</p>
+
+    <form id="email-form" novalidate>
+      <label for="email">Email-адрес</label>
+      <div class="controls">
+        <input id="email" type="email" placeholder="name@example.com"
+          autocomplete="off" autocapitalize="none" spellcheck="false"
+          aria-describedby="result" required>
+        <button type="submit">Проверить</button>
+      </div>
+      <p id="result" class="result" role="status" aria-atomic="true"></p>
+    </form>
+  </main>
+</body>
+</html>
+
